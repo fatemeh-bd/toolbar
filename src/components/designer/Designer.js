@@ -105,9 +105,9 @@ const Designer = () => {
                 />
               </Box>
             ) : item.datas?.type === "combobox" ? (
-              <Box key={i}>
+              <Box key={i} sx={{display:"flex"}}>
                 <Box onClick={() => dispatch(selectedTool(item))}>
-                  <FormControl sx={{ minWidth: "20%" }}>
+                  <FormControl sx={{ minWidth: "200px" }}>
                     <InputLabel id="demo-simple-select-label">
                       {item.datas?.label}
                     </InputLabel>
